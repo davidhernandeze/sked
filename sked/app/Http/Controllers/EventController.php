@@ -111,7 +111,7 @@ class EventController extends Controller
 
         $this->updateDateValoration($request['dates']);
 
-        //EmailSender::notifyGuests($request['eventId']);
+        EmailSender::notifyGuests($request['eventId']);
 
         return response('Store in the server', 200);
 
