@@ -24,17 +24,17 @@
 	filter: alpha(opacity=50);
 }
 .datepick a {
-	color: #222;
+	color: #9b9b9b;
 	text-decoration: none;
 }
 .datepick a.datepick-disabled {
-	color: #888;
+	color: #9b9b9b;
 	cursor: auto;
 }
 .datepick button {
     margin: 0.25em;
     padding: 0.125em 0em;
-	background-color: #5c9ccc;
+	background-color: #fffff8;
 	color: #fff;
     border: none;
     border-radius: 0.25em;
@@ -59,7 +59,7 @@
 	background-color: #dfeffc;
 }
 button.datepick-cmd:hover {
-	background-color: #79b7e7;
+	background-color: #fffff8;
 }
 .datepick-cmd-prevJump, .datepick-cmd-nextJump {
 	width: 8%;
@@ -125,8 +125,8 @@ button.datepick-cmd {
 }
 .datepick-month-header, .datepick-month-header select, .datepick-month-header input {
 	height: 1.5em;
-	background-color: #5c9ccc;
-	color: #fff;
+	background-color: #fffff8;
+	color: #9b9b9b;
 	font-weight: bold;
 }
 .datepick-month-header select, .datepick-month-header input {
@@ -142,7 +142,7 @@ button.datepick-cmd {
 	border-collapse: collapse;
 }
 .datepick-month thead {
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid #818181;
 }
 .datepick-month th, .datepick-month td {
 	margin: 0em;
@@ -166,7 +166,7 @@ button.datepick-cmd {
 	display: block;
 	width: 100%;
 	padding: 0.125em 0em;
-	background-color: #dfeffc;
+	background-color: #fffff8;
 	color: #000;
 	text-decoration: none;
 }
@@ -185,11 +185,11 @@ button.datepick-cmd {
 	background-color: #fad42e;
 }
 .datepick-month td .datepick-highlight {
-	background-color: #79b7e7;
+	background-color: #e3f1fc;
 }
 .datepick-month td .datepick-selected {
-	background-color: #4297d7;
-	color: #fff;
+	background-color: #e3f1fc;
+	color: #000000;
 }
 .datepick-status {
 	clear: both;

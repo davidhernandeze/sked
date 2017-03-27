@@ -476,7 +476,7 @@ monthsOffset: function(date) { // Always start on the quarter
 			minDate: null,
 			maxDate: null,
 			dateFormat: 'mm/dd/yyyy',
-			autoSize: false,
+			autoSize: true,
 			rangeSelect: false,
 			rangeSeparator: ' - ',
 			multiSelect: 0,
@@ -536,7 +536,7 @@ monthsOffset: function(date) { // Always start on the quarter
 			@property {boolean} [isRTL=false] <code>true</code> if language is written right-to-left. */
 		regionalOptions: { // Available regional settings, indexed by language/country code
 			'': { // Default regional settings - English/US
-				monthNames: ['January', 'February', 'March', 'April', 'May', 'June',
+				monthNames: ['JANUARY', 'FEBRAURY', 'MARCH', 'APRIL', 'MAY', 'JUNE',
 				'July', 'August', 'September', 'October', 'November', 'December'],
 				monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 				dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -545,17 +545,17 @@ monthsOffset: function(date) { // Always start on the quarter
 				dateFormat: 'mm/dd/yyyy',
 				firstDay: 0,
 				renderer: {}, // this.defaultRenderer
-				prevText: '&lt;Prev',
+				prevText: '&lt;',
 				prevStatus: 'Show the previous month',
 				prevJumpText: '&lt;&lt;',
 				prevJumpStatus: 'Show the previous year',
-				nextText: 'Next&gt;',
+				nextText: '&gt;',
 				nextStatus: 'Show the next month',
 				nextJumpText: '&gt;&gt;',
 				nextJumpStatus: 'Show the next year',
 				currentText: 'Current',
 				currentStatus: 'Show the current month',
-				todayText: 'Today',
+				todayText: 'TODAY',
 				todayStatus: 'Show today\'s month',
 				clearText: 'Clear',
 				clearStatus: 'Clear all the dates',

@@ -30,8 +30,37 @@ Route::get('/', function () {
 
     }
 
-
     return view('index');
+
+});
+
+Route::get('/premium', function () {
+
+    DB::table('premium_clicks')->insert(
+        ['date' => date('Y-m-d')]
+    );
+
+    return view('premium.index');
+
+});
+
+Route::post('/premium', function (\Illuminate\Http\Request $request) {
+
+    $email = $request['email'];
+
+    DB::table('premium_emails')->insert(
+        ['date' => date('Y-m-d'), 'email' => $email ]
+
+    );
+
+    return view('premium.success');
+
+});
+
+
+Route::get('/premium/info', function () {
+
+    return view('premium.info');
 
 });
 

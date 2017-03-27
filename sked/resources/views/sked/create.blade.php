@@ -177,8 +177,9 @@
 
 </body>
 <script type="text/javascript" src="{{asset('wickedpicker/src/wickedpicker.js')}}"></script>
-<script src="{{asset('js/admin-calendar.js')}}"></script>
 <script src='{{asset('js/admin-a1.js')}}'></script>
+<script src="{{asset('js/admin-calendar.js')}}"></script>
+
 
 </html>
 

@@ -192,7 +192,9 @@ button.datepick-cmd {
 	background-color: #fff;
 }
 .datepick-month td .datepick-weekend {
-	background-color: #ddd;
+
+	background-color: #ffffff;
+	color: #fa8983;
 }
 .datepick-month td .datepick-today {
 	background-color: #f0c0c0;

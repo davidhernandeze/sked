@@ -3,6 +3,7 @@
 namespace sked\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use sked\Comment;
 use sked\Event;
 use sked\Guest;
@@ -33,13 +34,18 @@ class StatsController extends Controller
 
         }
 
+        $premiumEmails = DB::table('premium_emails')->get();
+        $premiumClicks = DB::table('premium_clicks')->count();
+
         return view('admin.stats',
             [
                 'visits' => $visits,
                 'creators' => $creators,
                 'guests' => $guests,
                 'responseRate' => $responseRate,
-                'creatorsCount' => $creatorsCount
+                'creatorsCount' => $creatorsCount,
+                'premiumClicks' => $premiumClicks,
+                'premiumEmails' => $premiumEmails,
             ]);
 
     }
