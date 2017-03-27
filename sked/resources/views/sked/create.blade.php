@@ -56,6 +56,20 @@
     </div>
 </div>
 
+
+
+<div class="get-premium col-xs-12">
+
+    
+    <button class="btn btn-primary outline pull-right">
+        Get Premium
+    </button>
+
+
+</div>
+
+
+
 <div class="row">
     @if (count($errors)>0)
         <div class="alert alert-danger">

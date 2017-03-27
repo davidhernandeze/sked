@@ -48,3 +48,13 @@
     height: 34px;
     line-height: 1;
 }
+
+.remove {
+    line-height: 1;
+}
+
+.get-premium {
+    position: absolute;
+    z-index: -1000;
+    top: 15px;
+}
