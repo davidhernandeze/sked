@@ -54,6 +54,18 @@
         <h1 class="logo-text">Sked</h1>
 
     </div>
+
+
+</div>
+
+<div class="get-premium col-xs-12">
+
+    <form method="get" action="/premium">
+        <button type="submit" class="btn btn-primary outline pull-right">
+                Get Premium</button>
+    </form>
+
+
 </div>
 
 <div class="row">
@@ -188,6 +200,10 @@
 <script type="text/javascript" src="{{asset('wickedpicker/src/wickedpicker.js')}}"></script>
 <script src="{{asset('js/admin-calendar.js')}}"></script>
 <script src='{{asset('js/admin-a1.js')}}'></script>
+
+<script>
+
+</script>
 
 </html>
 

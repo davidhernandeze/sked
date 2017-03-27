@@ -15,6 +15,8 @@
 
     <!-- Spinner -->
     <script src="{{asset('spinner/js/jquery.loading.block.js')}}"></script>
+    <!-- Buttons -->
+    <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
 
     <title>Sked</title>
 
@@ -35,6 +37,16 @@
 <div class="col-xs-12">
 
     <h1 class="logo-text">Sked</h1>
+
+</div>
+
+<div class="get-premium col-xs-12">
+
+    <form method="get" action="/premium">
+        <button type="submit" class="btn btn-primary outline pull-right">
+            Get Premium</button>
+    </form>
+
 
 </div>
 
