@@ -40,7 +40,7 @@ $(document).ready(function(){
              '</div>'+
 
              '<div class="col-sm-2 col-xs-4">'+
-             '<button type="button" button_id="'+ guests +'" class="btn-add-guests btn text" >+ Add</button>'+
+             '<button type="button" button_id="'+ guests +'" class="btn-add-guests btn btn-primary outline" >+ Add</button>'+
              '</div>'+
              '<div class="col-xs-12" style="height: 30px">'+
              '</div>'+
@@ -81,6 +81,8 @@ $(document).ready(function(){
 
             $(this).removeClass('btn-add-guests');
             $(this).removeClass('text');
+            $(this).removeClass('btn-primary');
+            $(this).removeClass('outline');
             $(this).addClass('btn-danger');
             $(this).addClass('button-remove-guest');
 

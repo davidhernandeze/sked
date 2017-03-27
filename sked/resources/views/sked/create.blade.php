@@ -28,6 +28,9 @@
 
     <link href="{{asset('wickedpicker/stylesheets/wickedpicker.css')}}" rel="stylesheet" type="text/css">
 
+    <!-- Buttons -->
+    <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+
 
     <title>Sked</title>
 
@@ -121,7 +124,10 @@
 
         <div class="col-sm-2"></div>
         <div class="col-sm-3">
-            <button type="button" id="btn-new-guests" class="btn text">+ Add guests</button>
+            <button type="button" id="btn-new-guests" 
+                class="btn btn-primary outline">
+                + Add guests
+            </button>
         </div>
 
     </div>
@@ -163,7 +169,10 @@
 
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-            <button type="submit" id="btn-done" class="btn text btn">Done</button>
+            <button type="submit" id="btn-done" 
+                class="btn btn-primary outline">
+                Done
+            </button>
         </div>
 
     </div>
