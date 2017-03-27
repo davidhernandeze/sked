@@ -1,5 +1,6 @@
 
-/* 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*
 Created on: 17 Sep, 2014, 4:29:37 PM
 Author: senthil
 */
@@ -77,15 +78,70 @@ Author: senthil
 }
 input.timepicki-input {
 	background: none repeat scroll 0 0 #FFFFFF;
-    	border: 1px solid #CCCCCC;
-    	border-radius: 5px 5px 5px 5px;
-    	float: none;
-    	margin: 0;
-    	text-align: center;
-    	width: 70%;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 5px 5px;
+	float: none;
+	margin: 0;
+	text-align: center;
+	width: 70%;
 }
 a.reset_time {
 	float: left;
 	margin-top: 5px;
 	color: #000;
+}
+
+.datepick,
+.datepick-month,
+.datepick-month td,
+table {
+	font-family: 'Roboto', sans-serif;
+	border: 0;
+}
+
+.datepick-month,
+.datepick-month td,
+.datepick-month a {
+	background-color: white;
+	color: #888;
+}
+
+.datepick-month td .datepick-weekend {
+	background-color: white;
+	color: #ff6363;
+}
+
+tr {
+	background-color: white;
+}
+
+.datepick-month:hover,
+.datepick-month td:hover,
+.datepick-month a:hover {
+	background-color: #DBEEFD;
+}
+
+.datepick-month th {
+	border: 0;
+	background-color: white;
+}
+
+.datepick-month span,
+.datepick-month-header,
+.datepick-month-header select,
+.datepick-month-header input {
+	background-color: white;
+	color: #777;
+}
+
+.datepick-nav * {
+	color: #777 !important;
+}
+
+.datepick-month td .datepick-today {
+	background-color: #afdcff;
+}
+
+.datepick-month td .datepick-highlight {
+	background-color: #DBEEFD;
 }

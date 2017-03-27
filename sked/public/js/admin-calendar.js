@@ -29,7 +29,7 @@ $('#date-picker').datepick({
             '<input type="text" name="dates[' + dateCont + '][time]" class="timepicker form-control input"/>'+
             '</div>' +
             '<div class="col-xs-2">' +
-            '<button type="button" class="btn-danger button-remove-date">x</button>'+
+            '<button type="button" class="btn btn-danger button-remove-date">x</button>'+
             '</div>' +
             '</div>' +
             '</div>';

@@ -1,4 +1,4 @@
-    <!doctype html>
+<!doctype html>
 <html lang='en'>
 <head>
 
@@ -27,6 +27,9 @@
     <script src="{{asset('time-picky/js/timepicki.js')}}"></script>
 
     <link href="{{asset('wickedpicker/stylesheets/wickedpicker.css')}}" rel="stylesheet" type="text/css">
+
+    <!-- Buttons -->
+    <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
 
 
     <title>Sked</title>
@@ -121,7 +124,10 @@
 
         <div class="col-sm-2"></div>
         <div class="col-sm-3">
-            <button type="button" id="btn-new-guests" class="btn text">+ Add guests</button>
+            <button type="button" id="btn-new-guests"
+                    class="btn btn-primary outline">
+                + Add guests
+            </button>
         </div>
 
     </div>
@@ -163,7 +169,10 @@
 
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-            <button type="submit" id="btn-done" class="btn text btn">Done</button>
+            <button type="submit" id="btn-done"
+                    class="btn btn-primary outline">
+                Done
+            </button>
         </div>
 
     </div>
@@ -177,11 +186,11 @@
 
 </body>
 <script type="text/javascript" src="{{asset('wickedpicker/src/wickedpicker.js')}}"></script>
-<script src='{{asset('js/admin-a1.js')}}'></script>
 <script src="{{asset('js/admin-calendar.js')}}"></script>
-
+<script src='{{asset('js/admin-a1.js')}}'></script>
 
 </html>
+
 
 
 

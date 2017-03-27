@@ -3,55 +3,54 @@ var guestsCont = 0;
 
 $(document).ready(function(){
 
-    $(window).scrollTop(0);
     $('#eventName').focus();
 
     var guests = 0;
 
-     $('body').on('click', '#btn-new-guests', function () {
-         guests++;
-         guestsCont++;
+    $('body').on('click', '#btn-new-guests', function () {
+        guests++;
+        guestsCont++;
 
-         if(guests == 1){
-             $('#guests-input').append(
-                 '<div id="guest-head" class="row visible-md visible-lg">'+
-             '<div class="col-sm-12" style="height: 20px"></div>'+
-                 '<div class="col-sm-2"></div>'+
-                 '<div class="col-sm-4">'+
-                 '<p class="text header-text">Name</p>'+
-                 '</div>'+
-
-                 '<div class="col-sm-4">'+
-                 '<p class="text header-text">Email</p>'+
-                 '</div>'+
-                 '</div>');
-         }
-
-         var form =
-             '<div class="row guests-form">'+
+        if(guests == 1){
+            $('#guests-input').append(
+                '<div id="guest-head" class="row visible-md visible-lg">'+
+                '<div class="col-sm-12" style="height: 20px"></div>'+
                 '<div class="col-sm-2"></div>'+
-              '<div class="col-sm-4 col-xs-12">'+
-             '<input required name="guests['+guestsCont+'][name]" type="text" class="form-control input input-guest input-name" ' +
-              'id="guest-name" placeholder="Name">'+
-             '</div>'+
+                '<div class="col-sm-4">'+
+                '<p class="text header-text">Name</p>'+
+                '</div>'+
 
-             '<div class="col-sm-4 col-xs-8">'+
-             '<input required name="guests['+guestsCont+'][email]" type="email" class="form-control input input-guest input-email" ' +
-             'placeholder="Email">'+
-             '</div>'+
+                '<div class="col-sm-4">'+
+                '<p class="text header-text">Email</p>'+
+                '</div>'+
+                '</div>');
+        }
 
-             '<div class="col-sm-2 col-xs-4">'+
-             '<button type="button" button_id="'+ guests +'" class="btn-add-guests btn text" >+ Add</button>'+
-             '</div>'+
-             '<div class="col-xs-12" style="height: 30px">'+
-             '</div>'+
-             '</div>';
+        var form =
+            '<div class="row guests-form">'+
+            '<div class="col-sm-2"></div>'+
+            '<div class="col-sm-4 col-xs-12">'+
+            '<input required name="guests['+guestsCont+'][name]" type="text" class="form-control input input-guest input-name" ' +
+            'id="guest-name" placeholder="Name">'+
+            '</div>'+
 
-         $('#guests-input').append(form);
+            '<div class="col-sm-4 col-xs-8">'+
+            '<input required name="guests['+guestsCont+'][email]" type="email" class="form-control input input-guest input-email" ' +
+            'placeholder="Email">'+
+            '</div>'+
 
-         $('#btn-new-guests').prop("disabled",true);
+            '<div class="col-sm-2 col-xs-4">'+
+            '<button type="button" button_id="'+ guests +'" class="btn-add-guests btn btn-primary outline" >+ Add</button>'+
+            '</div>'+
+            '<div class="col-xs-12" style="height: 30px">'+
+            '</div>'+
+            '</div>';
 
-     });
+        $('#guests-input').append(form);
+
+        $('#btn-new-guests').prop("disabled",true);
+
+    });
 
     $('body').on('click', '.btn-add-guests', function () {
 
@@ -82,6 +81,8 @@ $(document).ready(function(){
 
             $(this).removeClass('btn-add-guests');
             $(this).removeClass('text');
+            $(this).removeClass('btn-primary');
+            $(this).removeClass('outline');
             $(this).addClass('btn-danger');
             $(this).addClass('button-remove-guest');
 
@@ -116,8 +117,6 @@ $(document).ready(function(){
     });
 
 });
-
-
 
 
 
