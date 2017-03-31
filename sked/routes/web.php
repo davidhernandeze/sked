@@ -20,7 +20,7 @@ Route::get('/', function () {
         $visit = new \sked\Visit();
         $visit->date = date('Y-m-d');
         $visit->visits = 1;
-        $visit->clicks_on_sked = 0;
+        $visit->clicks_in_sked = 0;
         $visit->save();
     }
     else{
@@ -41,6 +41,12 @@ Route::get('/premium', function () {
     );
 
     return view('premium.index');
+
+});
+
+Route::get('/support', function () {
+
+    return view('support.index');
 
 });
 

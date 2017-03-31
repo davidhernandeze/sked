@@ -37,6 +37,7 @@ class EventController extends Controller
         $event->username = $request['userName'];
         $event->email = $request['email'];
         $event->remaining_minutes = $request['hours']; //debug mode in minutes, originally -> *60
+        $event->created_at = date('Y-m-d');
         $event->status = 1;
 
         $event->save();
@@ -111,7 +112,7 @@ class EventController extends Controller
 
         $this->updateDateValoration($request['dates']);
 
-        EmailSender::notifyGuests($request['eventId']);
+        //EmailSender::notifyGuests($request['eventId']);
 
         return response('Store in the server', 200);
 

@@ -15,6 +15,9 @@
     <script src='http://code.jquery.com/jquery-1.12.4.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
+    <!-- Buttons -->
+    <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+
     <title>Sked</title>
 
 
@@ -54,9 +57,9 @@
 
 
     <div class="row">
-        <div class="col-xs-12">
-            <div id="main-button" class="button-circle">
-                <p id="button-text">Find the best time</p>
+        <div class="col-xs-4 col-xs-offset-4">
+            <div id="main-button" class="btn btn-primary outline" style="width: 100%;">
+                <p>Find the best time</p>
             </div>
 
         </div>
@@ -65,7 +68,7 @@
     </div>
 </div>
 
-<div id="inlineDatepicker"></div>
+
 
 </body>
 

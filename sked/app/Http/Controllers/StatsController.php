@@ -15,8 +15,8 @@ class StatsController extends Controller
     public function show() {
 
         $visits = Visit::all();
-        $creators = Event::select(['name', 'email'])->get()->unique('email');
-        $guests = Guest::select(['name', 'email'])->get()->unique('email');
+        $creators = Event::select(['name', 'email', 'created_at'])->get()->unique('email');
+        $guests = Guest::select(['name', 'email', 'response_date'])->get()->unique('email');
 
         $totalGuest = Guest::all()->count();
         $guestsResponses = Guest::where('already_sked', '1')->count();
@@ -29,7 +29,8 @@ class StatsController extends Controller
         foreach ($creators as $creator){
 
             $repetitions = Event::where('email', $creator['email'])->count();
-            $row = ['name' => $creator['name'], 'email' => $creator['email'], 'count' => $repetitions];
+            $row = ['name' => $creator['name'], 'email' => $creator['email'], 'count' => $repetitions,
+            'date' => $creator['created_at']];
             array_push($creatorsCount, $row);
 
         }

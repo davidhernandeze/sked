@@ -145,10 +145,10 @@
 
 
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-4 col-xs-offset-4" style="padding-bottom: 50px; padding-top: 50px;">
 
-                <div id="button-sked" class="button-circle-small">
-                    <p class="button-text">Sked it</p>
+                <div id="button-sked" class="btn btn-primary outline" style="width: 100%">
+                    <p>Sked it</p>
                 </div>
 
             </div>
