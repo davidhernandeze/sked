@@ -147,7 +147,7 @@
         <div class="row">
             <div class="col-xs-4 col-xs-offset-4" style="padding-bottom: 50px; padding-top: 50px;">
 
-                <div id="button-sked" class="btn btn-primary outline" style="width: 100%">
+                <div id="button-sked" class="btn btn-primary outline" style="width: 100%; font-size: larger">
                     <p>Sked it</p>
                 </div>
 

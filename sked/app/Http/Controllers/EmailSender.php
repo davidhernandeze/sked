@@ -56,7 +56,7 @@ class EmailSender
 
         foreach ($guests as $guest){
 
-            $url = 'dev.sked.es/guest?guestid='.$guest->id.'&eventid='.$event_id;
+            $url = 'dev.sked.online/guest?guestid='.$guest->id.'&eventid='.$event_id;
 
             Mail::send('email.invitation', ['event' => Event::findOrFail($event_id),
                 'url' => $url], function($ms) use ($guest){

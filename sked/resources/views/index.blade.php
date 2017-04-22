@@ -57,7 +57,7 @@
 
 
     <div class="row">
-        <div class="col-xs-4 col-xs-offset-4">
+        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
             <div id="main-button" class="btn btn-primary outline" style="width: 100%;">
                 <p>Find the best time</p>
             </div>

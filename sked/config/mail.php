@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'sked.es'),
+    'host' => env('MAIL_HOST', 'sked.online'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'invitation@sked.es',
+        'address' => 'invitation@sked.online',
         'name' => 'Sked',
     ],
 

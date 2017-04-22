@@ -36,7 +36,7 @@ class EventController extends Controller
         $event->name = $request['eventName'];
         $event->username = $request['userName'];
         $event->email = $request['email'];
-        $event->remaining_minutes = $request['hours']; //debug mode in minutes, originally -> *60
+        $event->remaining_minutes = $request['hours']*60;
         $event->created_at = date('Y-m-d');
         $event->status = 1;
 
